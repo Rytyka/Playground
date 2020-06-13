@@ -30,5 +30,7 @@ We do this by injecting the provider instead of the implementation, e.g.
             }
         }
  
-*  This Provider is bound to the interface in the Guice module, e.g. `bind(Discountable.class).toProvider(ProviderClass.class);`
+*  The interface is bound to this Provider in the Guice module, e.g. `bind(Discountable.class).toProvider(ProviderClass.class);`
 
+### Provides
+Instead of binding the Provider in the Guice Module, we can override the `get()`
